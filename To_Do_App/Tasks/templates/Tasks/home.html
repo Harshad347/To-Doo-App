@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="logo">To-Doo</h1>
+		<form method="POST">
+			{% csrf_token %}
+			{{form.title}}
+			<button class="btn" type="submit"><img src="{% static 'images/add_btn.svg' %}" alt=""></button>
+		</form>
+    <hr>
+		<div>
+			{% for task in tasks %}
+				<div class="task_box">
+					{% if task.is_completed == True %}
+						<p><strike>{{task.title}}</strike></p>
+            <a class="undone_btn" href="{% url 'invert' task.id %}"><img src="{% static 'images/undone.svg' %}" alt=""></a> 
+					{% else %}
+            <a class="edit_btn" href="{% url 'update' task.id %}"><img src="{% static 'images/edit.svg' %}" alt=""></a>
+						<p>{{task.title}}</p>
+					  <a class="done_btn" href="{% url 'delete' task.id %}"><img src="{% static 'images/delete.svg' %}" alt=""></a>
+            <a class="delete_btn" href="{% url 'invert' task.id %}"><img src="{% static 'images/done.svg' %}" alt=""></a>
+					{% endif %}
+			  </div>
+			{% endfor %}
+		</div>
+</body>
+</html>
