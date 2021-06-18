@@ -41,13 +41,19 @@ $ ./venv/Scripts/activate
 $ pip install -r requirements.txt
 `
 
-5. Now, apply the migrations with the management command.
+5. Now,  go to To_Do_App directory.
+
+`
+$ cd To_Do_App
+`
+
+6. Now, apply the migrations with the management command.
  
 `
 $ python manage.py migrate
 `
 
-6. Finally, start the developement server with the management commnad.
+7. Finally, start the developement server with the management commnad.
 
 `
 $ python manage.py runserver
