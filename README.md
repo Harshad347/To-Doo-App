@@ -66,4 +66,4 @@ You can use this to create, update, delete a task.
 - Harshad Dukare - [Harshad347](https://github.com/Harshad347/)
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md]() file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
