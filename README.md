@@ -23,16 +23,20 @@ $ sudo apt install python3.8
 $ git clone https://github.com/Harshad347/To-Doo-App.git
 `
 
-2. Create a Virtual Enviornment with the venv module.
+2. Go to your app directory and create a Virtual Enviornment with the venv module.
 
 `
-$ python3 -m venv venv
+$ cd To-Do-App
+`
+
+`
+$ python -m venv venv
 `
 
 3. Once you’ve created a virtual environment, you may activate it.
 
 `
-$ ./venv/Scripts/activate
+$ .\venv\Scripts\activate
 `
 
 4. Now, install the requirements from the requirements.txt file.
