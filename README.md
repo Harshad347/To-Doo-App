@@ -1,5 +1,5 @@
 # To-Doo-App
-To-Doo is a simple Task creating application which can be create, update, delete by user. 
+**To-Doo** is a simple Task creating application which can be used create, update, delete a task. 
 
 # Technologies
 - Django
@@ -16,22 +16,54 @@ To get a local copy up and running follow these simple steps:
 $ sudo apt install python3.8
 `
 
-#Installation
-Create a local copy of this git repository with git clone command.
+# Installation
+1. Create a local copy of this git repository with git clone command.
 
+`
+$ git clone https://github.com/Harshad347/To-Doo-App.git
+`
 
-Create a Virtual Enviornment with the venv module.
+2. Create a Virtual Enviornment with the venv module.
 
+`
 $ python3 -m venv venv
-Once you’ve created a virtual environment, you may activate it.
+`
 
-$ source venv/bin/activate
-Now, install the requirements from the requirements.txt file.
+3. Once you’ve created a virtual environment, you may activate it.
 
+`
+$ ./venv/Scripts/activate
+`
+
+4. Now, install the requirements from the requirements.txt file.
+
+`
 $ pip install -r requirements.txt
-Now, apply the migrations with the management command.
+`
 
+5. Now, apply the migrations with the management command.
+ 
+`
 $ python manage.py migrate
-Finally, start the developement server with the management commnad.
+`
 
+6. Finally, start the developement server with the management commnad.
+
+`
 $ python manage.py runserver
+`
+
+# Usage
+You can use this to create, update, delete a task.
+
+![Screenshot (61)](https://user-images.githubusercontent.com/78790378/122609697-07d7f080-d09c-11eb-842b-caad06216d32.png)
+
+![Screenshot (62)](https://user-images.githubusercontent.com/78790378/122609788-2f2ebd80-d09c-11eb-8daa-3964bfc8da3c.png)
+
+![Screenshot (65)](https://user-images.githubusercontent.com/78790378/122609806-3655cb80-d09c-11eb-9e4b-fd72cc3e64d6.png)
+
+# Authors
+- Harshad Dukare - [Harshad347](https://github.com/Harshad347/)
+
+# License
+This project is licensed under the MIT License - see the [LICENSE.md]() file for details
