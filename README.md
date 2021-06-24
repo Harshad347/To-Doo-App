@@ -12,7 +12,7 @@ follow these simple steps:
 
 **Prerequisites**
 - Python 3
-- 
+
 `
 $ sudo apt install python3.8
 `
