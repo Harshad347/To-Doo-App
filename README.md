@@ -8,10 +8,11 @@
 - CSS
 
 # Getting Started
-To get a local copy up and running follow these simple steps:
+follow these simple steps:
 
 **Prerequisites**
 - Python 3
+- 
 `
 $ sudo apt install python3.8
 `
