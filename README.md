@@ -1,5 +1,5 @@
 # To-Doo-App
-**To-Doo** is a simple Task creating application which can be used create, update, delete a task. 
+**To-Doo** is a simple Task creating application which can be used to create, update, delete a task. 
 
 # Technologies
 - Django
